@@ -52,12 +52,10 @@ function draw() {
 
     if(block2.isTouching(ball)){
         ball.shapeColor = "orange";
-        music.play();
+        music.stop();
         //write code to set velocityX and velocityY of ball as 0
         ball.velocityX = 0;
         ball.velocityY = 0;
-        music.play = false;
-        //write code to stop music
     }
 
     //write code to bounce off ball from the block3
